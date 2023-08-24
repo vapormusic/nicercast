@@ -2,7 +2,7 @@ var express = require("express");
 var http = require("http");
 var icecast = require("icecast-stack");
 var ip = require("ip");
-var lame = require("node-lame");
+var lame = require("lame");
 var stream = new require("stream");
 
 // 16-bit signed samples
