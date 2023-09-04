@@ -1,6 +1,6 @@
 {
   "name": "nicercast",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "simple icecast compliant streaming server",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,6 @@
     "express": "~3.5.0",
     "icecast-stack": "~0.3.0",
     "ip": "~0.3.0",
-    "lame": "github:FlatIO/node-lame#feat.arm64-support"
+    "lame": "github:euguuu/node-lame#hack_for_linux_arm64_build"
   }
 }
