@@ -34,7 +34,7 @@ var Server = function (inputStream, opts) {
 
     res.status(200);
     res.set("Content-Type", "audio/x-mpegurl");
-    res.send("http://" + addr + ":" + this.serverPort + "/listen");
+    res.send("http://" + addr + ":" + this.serverPort + "/listen.mp3");
   }.bind(this);
 
   app.get("/", playlistEndpoint);
@@ -42,7 +42,7 @@ var Server = function (inputStream, opts) {
 
   // audio endpoint
   app.get(
-    "/listen",
+    "/listen.mp3",
     function (req, res, next) {
       var acceptsMetadata = req.headers["icy-metadata"] === 1;
       var parsed = require("url").parse(req.url, true);
